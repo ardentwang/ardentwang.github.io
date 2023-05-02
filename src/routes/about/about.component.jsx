@@ -1,8 +1,10 @@
+import Button from 'react-bootstrap/Button';
+
 const About = () => {
     return (
-        <div>
-            About Page
-        </div>
+        <Button>
+            click
+        </Button>
     )
 }
 

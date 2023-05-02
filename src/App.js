@@ -5,6 +5,7 @@ import Home from './routes/home/home.component';
 import About from './routes/about/about.component';
 import Contact from './routes/contact/contact.component';
 import Projects from './routes/projects/projects.component';
+import Work from './routes/work/work.component';
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
           <Route path='about' element={<About/>} />
           <Route path='contact' element={<Contact/>} />
           <Route path='projects' element={<Projects/>} />
-          <Route path='work' element={<About/>} />
+          <Route path='work' element={<Work/>} />
         </Route>
-      </Routes>
+    </Routes>
     </div>
   );
 }
