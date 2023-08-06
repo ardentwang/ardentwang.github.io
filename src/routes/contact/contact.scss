@@ -1,0 +1,47 @@
+.contact-page {
+    padding: 20px;
+    background-color: var(--colorShadeE);
+  
+    .contact-header {
+      text-align: center;
+  
+      h1 {
+        color: var(--colorShadeA);
+      }
+    }
+  
+    .contact-content {
+      display: flex;
+      justify-content: center;
+  
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: var(--colorShadeE);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+        input, textarea {
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid var(--colorShadeB);
+        }
+  
+        button {
+          padding: 10px;
+          background-color: var(--colorShadeA);
+          color: var(--colorShadeE);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: var(--colorShadeB);
+          }
+        }
+      }
+    }
+  }
+  

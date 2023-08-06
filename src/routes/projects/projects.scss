@@ -1,0 +1,35 @@
+.projects-page {
+    padding: 20px;
+    background-color: var(--colorShadeE);
+  
+    .projects-header {
+      text-align: center;
+  
+      h1 {
+        color: var(--colorShadeA);
+      }
+    }
+  
+    .projects-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  
+      .project-card {
+        background-color: var(--colorShadeE);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        width: calc(50% - 20px);
+  
+        h2 {
+          color: var(--colorShadeA);
+        }
+  
+        p {
+          color: var(--colorShadeB);
+        }
+      }
+    }
+  }
+  

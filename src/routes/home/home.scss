@@ -1,0 +1,44 @@
+.home {
+    .hero-section {
+        padding: 20px;
+        background-color: var(--colorShadeE);
+        text-align: center;
+
+        h1 {
+            color: var(--colorShadeA);
+        }
+
+        p {
+            color: var(--colorShadeB);
+        }
+    }
+
+    .featured-section {
+        padding: 20px;
+
+        h2 {
+            color: var(--colorShadeA);
+        }
+
+        .featured-items {
+            display: flex;
+            justify-content: space-around;
+
+            .featured-item {
+                width: 30%;
+                background-color: var(--colorShadeE);
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+                h3 {
+                    color: var(--colorShadeA);
+                }
+
+                p {
+                    color: var(--colorShadeB);
+                }
+            }
+        }
+    }
+}
+

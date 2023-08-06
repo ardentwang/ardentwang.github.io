@@ -1,1 +1,33 @@
 
+:root {
+  --backgroundColor: rgba(246, 241, 209);
+  --colorShadeA: rgb(255, 86, 86);
+  --colorShadeB: rgb(255, 62, 62);
+  --colorShadeC: rgb(255, 221, 221);
+  --colorShadeD: rgb(252, 201, 201);
+  --colorShadeE: rgb(255, 255, 255);
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+

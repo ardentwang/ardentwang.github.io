@@ -8,9 +8,10 @@ import { ReactComponent as ContactLogo } from '../../assets/phone.svg';
 import { ReactComponent as ProjectLogo } from '../../assets/projects.svg';
 
 const Navigation = () => {
+
     return (
         <Fragment>
-            <div className='navigation'>
+          <div className='navigation'>
               <div className='nav-links-container'>
                 <Link className='nav-link' to='/'>
                   <HomeLogo className='logo-container'/>
