@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.scss';
+import Contact from '../contact/contact.component';
 
 const Home = () => {
     return (
@@ -23,6 +24,9 @@ const Home = () => {
                     {/* Add more featured items as needed */}
                 </div>
             </section>
+            <footer className="contact-footer">
+                <Contact />
+            </footer>
         </div>
     );
 }

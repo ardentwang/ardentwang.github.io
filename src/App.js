@@ -4,7 +4,6 @@ import { useRoutes } from 'react-router-dom';
 import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import About from './routes/about/about.component';
-import Contact from './routes/contact/contact.component';
 import Projects from './routes/projects/projects.component';
 import Work from './routes/work/work.component';
 import { SwitchTransition, CSSTransition } from "react-transition-group";

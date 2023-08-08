@@ -1,7 +1,5 @@
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './about.component.scss';
-import Contact from '../contact/contact.component';
 
 const About = () => {
   return (
@@ -27,10 +25,6 @@ const About = () => {
           <p>CTO</p>
         </div>
       </section>
-
-      <footer className="about-footer">
-        <Contact />
-      </footer>
     </div>
   );
 };
