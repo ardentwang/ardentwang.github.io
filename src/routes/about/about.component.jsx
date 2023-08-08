@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './about.component.scss';
+import Contact from '../contact/contact.component';
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
       </section>
 
       <footer className="about-footer">
-        <Button variant="primary">Contact Us</Button>
+        <Contact />
       </footer>
     </div>
   );

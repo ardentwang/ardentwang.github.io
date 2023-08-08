@@ -32,11 +32,6 @@ const Navigation = () => {
                   <WorkLogo className='logo-container'/>
                   Work
                 </Link>
-
-                <Link className='nav-link' to='contact'>
-                  <ContactLogo className='logo-container'/>
-                  Contact
-                </Link>
               </div>
             </div>
             <Outlet/>

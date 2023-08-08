@@ -16,7 +16,6 @@ function App() {
   const element = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/about', element: <About /> },
-    { path: '/contact', element: <Contact /> },
     { path: '/projects', element: <Projects /> },
     { path: '/work', element: <Work /> },
   ]);
