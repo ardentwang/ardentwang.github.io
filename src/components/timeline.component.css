@@ -1,0 +1,39 @@
+.timeline {
+    width: 100%;
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: #333;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    text-align: right;
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+

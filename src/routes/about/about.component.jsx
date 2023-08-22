@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './about.component.scss';
+import EducationItem from '../../components/education.component.jsx';
+import wisconsinImage from '../../assets/images/wisconsin.svg'
 
 const About = () => {
   return (
@@ -12,18 +14,28 @@ const About = () => {
         <p>We are a company that specializes in something. Our mission is to do something to help our clients.</p>
       </section>
 
-      <section className="about-team">
-        <h2>Our Team</h2>
-        <p>Meet the team that makes everything possible.</p>
+      <section className="about-education">
+        <h2>Education History</h2>
+        <p>Information regarding my current and past education.</p>
 
-        <div className="team-member">
-          <h3>John Doe</h3>
-          <p>CEO</p>
-        </div>
-        <div className="team-member">
-          <h3>Jane Doe</h3>
-          <p>CTO</p>
-        </div>
+        <EducationItem 
+          logo={wisconsinImage}
+          institution="University of Wisconsin - Madison"
+          title1="Major: "
+          description1="Computer Science | Data Science"
+          timeframe="Sept. 2021 - May 2025"
+          title2="Relevant Coursework: "
+          description2=""
+        />
+        <EducationItem className="troy"
+          logo={wisconsinImage}
+          institution="Troy High School"
+          title1="Major: "
+          description1="Computer Science | Data Science"
+          timeframe="Sept. 2021 - May 2025"
+          title2="Relevant Coursework: "
+          description2=""
+        />
       </section>
     </div>
   );
