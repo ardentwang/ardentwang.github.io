@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.scss';
-import Contact from '../contact/contact.component';
+import Contact from '../../components/contact.component';
 
 const Home = () => {
     return (

@@ -1,6 +1,5 @@
-
 :root {
-  --backgroundColor: rgba(246, 241, 209);
+  --backgroundColor: rgb(0, 0, 0);
   --colorShadeA: rgb(255, 86, 86);
   --colorShadeB: rgb(255, 62, 62);
   --colorShadeC: rgb(255, 221, 221);

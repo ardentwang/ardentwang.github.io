@@ -11,6 +11,9 @@
     }
   
     .about-content {
+      h2 {
+        color: var(--colorShadeA);
+      }
       p {
         color: var(--colorShadeB);
       }
@@ -18,18 +21,6 @@
   
     .about-education {
       padding: 20px;
-  
-      h2 {
-        color: var(--colorShadeA);
-      }
-      p {
-        color: var(--colorShadeB);
-      }
-  
-      .troy{
-        color: black;
-      }
-      
     }
   }
   
