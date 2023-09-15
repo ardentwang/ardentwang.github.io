@@ -1,7 +1,7 @@
 import React from 'react';
 import Timeline from '../../components/timeline.component';
 import './work.component.css';
-import uclaLogo from '../../assets/images/ucla.jpg';
+import uclaLogo from '../../assets/images/ucla.png';
 import juniLogo from '../../assets/images/juni.png';
 import caisoLogo from '../../assets/images/caiso.jpg';
 import wiscLogo from '../../assets/images/wisconsin.png';
