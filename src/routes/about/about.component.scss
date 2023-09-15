@@ -11,47 +11,16 @@
     }
   
     .about-content {
-      p {
-        color: var(--colorShadeB);
-      }
-    }
-  
-    .about-team {
-      padding: 20px;
-  
       h2 {
         color: var(--colorShadeA);
       }
-  
       p {
         color: var(--colorShadeB);
       }
-  
-      .team-member {
-        background-color: var(--colorShadeE);
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 10px;
-  
-        h3 {
-          color: var(--colorShadeA);
-        }
-  
-        p {
-          color: var(--colorShadeB);
-        }
-      }
     }
   
-    .about-footer {
-      text-align: center;
-      margin-top: 20px;
-  
-      button {
-        color: var(--colorShadeE);
-        background-color: var(--colorShadeA);
-        border: none;
-      }
+    .about-education {
+      padding: 20px;
     }
   }
   

@@ -1,0 +1,65 @@
+.timeline {
+    width: 100%;
+    position: relative;
+    padding-left: 140px; /* Increased for date range space */
+    padding-right: 100px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 90px; /* Adjusted for the date range space */
+    height: 100%;
+    width: 2px;
+    background-color: var(--colorShadeB);
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 40px;
+    border: 2px solid rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+.timeline-dates {
+    position: absolute;
+    left: -140px;
+    width: 130px;
+    text-align: right;
+    color: var(--textColor);
+}
+
+.timeline-content h3, .timeline-content h4, .timeline-content p {
+    color: inherit; 
+}
+
+.timeline-content {
+    padding: 10px;
+    
+}
+
+.timeline-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-logo img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.timeline-company {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+.timeline-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold; /* Replaced "text-emphasis" with "font-weight" for bolding */
+}

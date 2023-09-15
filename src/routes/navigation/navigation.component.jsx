@@ -1,11 +1,10 @@
 import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./navigation.component.scss";
-import { ReactComponent as HomeLogo } from '../../assets/house.svg';
-import { ReactComponent as WorkLogo } from '../../assets/work.svg';
-import { ReactComponent as InfoLogo } from '../../assets/info.svg';
-import { ReactComponent as ContactLogo } from '../../assets/phone.svg';
-import { ReactComponent as ProjectLogo } from '../../assets/projects.svg';
+import { ReactComponent as HomeLogo } from '../../assets/images/house.svg';
+import { ReactComponent as WorkLogo } from '../../assets/images/work.svg';
+import { ReactComponent as InfoLogo } from '../../assets/images/info.svg';
+import { ReactComponent as ProjectLogo } from '../../assets/images/projects.svg';
 
 const Navigation = () => {
 
@@ -31,11 +30,6 @@ const Navigation = () => {
                 <Link className='nav-link' to='work'>
                   <WorkLogo className='logo-container'/>
                   Work
-                </Link>
-
-                <Link className='nav-link' to='contact'>
-                  <ContactLogo className='logo-container'/>
-                  Contact
                 </Link>
               </div>
             </div>

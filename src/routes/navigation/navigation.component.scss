@@ -1,5 +1,5 @@
 :root {
-  --backgroundColor: rgba(246, 241, 209);
+  --backgroundColor: rgb(0, 0, 0);
   --colorShadeA: rgb(255, 86, 86);
   --colorShadeB: rgb(255, 62, 62);
   --colorShadeC: rgb(255, 221, 221);
@@ -14,8 +14,10 @@
     align-items: center;
     background-color: rgb(255, 86, 86);
     padding: 0px 20px 30px;
-    height: 110px;
-    margin-bottom: 30px;
+    min-height: 110px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(223, 223, 223);
+    
   
     .nav-links-container {
       display: flex;

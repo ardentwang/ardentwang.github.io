@@ -1,0 +1,7 @@
+.work-page{
+    .work-title {
+        text-align: center;
+        color: var(--colorShadeA);
+        padding-bottom: 50px;
+    }
+}
