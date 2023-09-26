@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4673d1b5.css",
+    "main.js": "/static/js/main.e1c302cd.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/amazon.png": "/static/media/amazon.82d6e063427a8ad33e1b.png",
+    "static/media/wisconsin.png": "/static/media/wisconsin.b6572060fe943aec8ebb.png",
+    "static/media/ucla.png": "/static/media/ucla.8f33388a8024725df26b.png",
+    "static/media/juni.png": "/static/media/juni.6a8f9fcef06233827cf4.png",
+    "static/media/caiso.jpg": "/static/media/caiso.ab1e7dcaf7f6fdc90591.jpg",
+    "static/media/troy.jpg": "/static/media/troy.adcab7f5bc3956c293b2.jpg",
+    "static/media/covid.png": "/static/media/covid.19d7b6e7c6e29fbeb75d.png",
+    "static/media/wisconsin.svg": "/static/media/wisconsin.1d23ed5e4211b0b1e0af84332d5127f2.svg",
+    "static/media/projects.svg": "/static/media/projects.30284d0aa2710f49802af054e22d1dd1.svg",
+    "static/media/work.svg": "/static/media/work.d69527ce687f415168ee88607351ba74.svg",
+    "index.html": "/index.html",
+    "static/media/house.svg": "/static/media/house.6072befe9bf667cb7a76322e5e71e15f.svg",
+    "static/media/info.svg": "/static/media/info.30a53570911b33f16076611486925a48.svg",
+    "main.4673d1b5.css.map": "/static/css/main.4673d1b5.css.map",
+    "main.e1c302cd.js.map": "/static/js/main.e1c302cd.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4673d1b5.css",
+    "static/js/main.e1c302cd.js"
+  ]
+}
