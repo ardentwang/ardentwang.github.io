@@ -1,0 +1,36 @@
+// Project.scss
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  // Project.scss
+  .project-image {
+    width: 100%; // take up the full width of the container
+    max-width: 500px; // maximum width of 500 pixels
+    height: auto; // height scales proportionally
+    border-radius: 10px; // optional, for rounded corners
+  }
+  
+  
+  .project-title {
+    font-size: 1.5em;
+    margin-top: 16px;
+  }
+  
+  .project-description {
+    margin-top: 8px;
+  }
+  
+  .project-link {
+    margin-top: 12px;
+    a {
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
