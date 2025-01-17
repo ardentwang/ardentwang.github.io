@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4673d1b5.css",
-    "main.js": "/static/js/main.52afe58c.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/static/css/main.19cd641b.css",
+    "main.js": "/static/js/main.61b484f9.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/amazon.png": "/static/media/amazon.82d6e063427a8ad33e1b.png",
     "static/media/aiadmits.png": "/static/media/aiadmits.13b96822fe41471c92b1.png",
     "static/media/buyhomepro.png": "/static/media/buyhomepro.5bcf6a59fd4cddb5f752.png",
@@ -18,12 +18,12 @@
     "index.html": "/index.html",
     "static/media/house.svg": "/static/media/house.6072befe9bf667cb7a76322e5e71e15f.svg",
     "static/media/info.svg": "/static/media/info.30a53570911b33f16076611486925a48.svg",
-    "main.4673d1b5.css.map": "/static/css/main.4673d1b5.css.map",
-    "main.52afe58c.js.map": "/static/js/main.52afe58c.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.19cd641b.css.map": "/static/css/main.19cd641b.css.map",
+    "main.61b484f9.js.map": "/static/js/main.61b484f9.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4673d1b5.css",
-    "static/js/main.52afe58c.js"
+    "static/css/main.19cd641b.css",
+    "static/js/main.61b484f9.js"
   ]
 }
