@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.4673d1b5.css",
-    "main.js": "/static/js/main.e1c302cd.js",
+    "main.js": "/static/js/main.52afe58c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/amazon.png": "/static/media/amazon.82d6e063427a8ad33e1b.png",
+    "static/media/aiadmits.png": "/static/media/aiadmits.13b96822fe41471c92b1.png",
+    "static/media/buyhomepro.png": "/static/media/buyhomepro.5bcf6a59fd4cddb5f752.png",
     "static/media/wisconsin.png": "/static/media/wisconsin.b6572060fe943aec8ebb.png",
     "static/media/ucla.png": "/static/media/ucla.8f33388a8024725df26b.png",
     "static/media/juni.png": "/static/media/juni.6a8f9fcef06233827cf4.png",
@@ -17,11 +19,11 @@
     "static/media/house.svg": "/static/media/house.6072befe9bf667cb7a76322e5e71e15f.svg",
     "static/media/info.svg": "/static/media/info.30a53570911b33f16076611486925a48.svg",
     "main.4673d1b5.css.map": "/static/css/main.4673d1b5.css.map",
-    "main.e1c302cd.js.map": "/static/js/main.e1c302cd.js.map",
+    "main.52afe58c.js.map": "/static/js/main.52afe58c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4673d1b5.css",
-    "static/js/main.e1c302cd.js"
+    "static/js/main.52afe58c.js"
   ]
 }
