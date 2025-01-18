@@ -10,7 +10,9 @@ const Home = () => {
                 <p>
                     Welcome! I'm a senior at the University of Wisconsin Madison, 
                     actively pursuing a double major in Computer Science and Data Science. 
-                    Please feel free to take a 
+                    With a passion for problem-solving and innovation, I've developed strong
+                    skills in software development, data analysis, and machine learning.
+                    Please feel free to explore my projects and experiences throughout this site.
                 </p>
             </section>
             <footer className="contact-footer">
