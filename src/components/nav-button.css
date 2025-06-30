@@ -1,0 +1,83 @@
+:root {
+  --nav-button-primary: #ff7979;
+  --nav-button-secondary: #2d2d2d;
+  --nav-button-light: #ffffff;
+  --nav-button-shadow: rgba(255, 121, 121, 0.3);
+}
+
+.nav-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--nav-button-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 0.6em 1.2em;
+  border: 2px solid var(--nav-button-primary);
+  border-radius: 1em;
+  transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+.nav-button.nav-button-light {
+  background: var(--nav-button-light);
+}
+
+.nav-button.nav-button-medium {
+  background: #ffe6e6;
+}
+
+.nav-button.nav-button-dark {
+  background: #ffcccc;
+}
+
+.nav-button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--nav-button-primary);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--nav-button-primary), 0 0.75em 0 0 var(--nav-button-secondary);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+.nav-button:hover.nav-button-light {
+  background: #f5f5f5;
+}
+
+.nav-button:hover.nav-button-medium {
+  background: #ffcccc;
+}
+
+.nav-button:hover.nav-button-dark {
+  background: #ffb3b3;
+}
+
+.nav-button:hover {
+  transform: translate(0, 0.375em);
+}
+
+.nav-button:hover::before {
+  transform: translate3d(0, 0.375em, -1em);
+}
+
+.nav-button:active {
+    transform: translate(0, 0.75em);
+}
+
+.nav-button:active::before {
+  transform: translate3d(0, 0, -1em);
+  box-shadow: 0 0 0 2px var(--nav-button-primary), 0 0 0 0 var(--nav-button-primary);
+}
