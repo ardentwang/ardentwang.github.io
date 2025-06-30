@@ -1,4 +1,3 @@
-import ThemeToggle from "@/components/theme-toggle"
 import Navbar from "@/components/Navbar"
 
 const Home = () => {
@@ -42,12 +41,12 @@ const Home = () => {
                 About Me
               </h2>
               <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg leading-relaxed mb-6">
-                I'm a passionate developer with a love for creating seamless digital experiences. 
+                I&#39;m a passionate developer with a love for creating seamless digital experiences. 
                 With expertise in modern web technologies, I bring ideas to life through clean code 
                 and thoughtful design.
               </p>
               <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg leading-relaxed mb-8">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
+                When I&#39;m not coding, you&#39;ll find me exploring new technologies, contributing to open source, 
                 or sharing knowledge with the developer community.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -100,10 +99,10 @@ const Home = () => {
       <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-[#ca2a2a]/10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-[#ca2a2a] mb-6">
-            Let's Work Together
+            Let&#39;s Work Together
           </h2>
           <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg mb-8 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+            Have a project in mind? I&#39;d love to hear about it. Let&#39;s create something amazing together.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="mailto:your@email.com" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-lg">
