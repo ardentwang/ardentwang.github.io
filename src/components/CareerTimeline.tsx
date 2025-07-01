@@ -85,7 +85,7 @@ const defaultEvents: CareerEvent[] = [
 const CareerTimeline: React.FC<CareerTimelineProps> = ({ events = defaultEvents }) => {
   console.log('CareerTimeline component: Starting to render');
   const [activeEvent, setActiveEvent] = useState<string | null>(null);
-  const [hoveredEvent, setHoveredEvent] = useState<string | null>(null);
+  const [, setHoveredEvent] = useState<string | null>(null);
 
   // Debug logs
   console.log('CareerTimeline: Received events prop:', events);
