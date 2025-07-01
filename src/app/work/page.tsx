@@ -100,7 +100,7 @@ const WorkHistory = () => {
           {/* Vertical line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
           
-          {workExperience.map((job, index) => (
+          {workExperience.map((job) => (
             <div key={job.id} className="relative flex items-start mb-8 last:mb-0">
               {/* Timeline dot */}
               <div className={`absolute left-8 w-4 h-4 ${job.dotColor} rounded-full -translate-x-1/2 ring-4 ring-white`}></div>
