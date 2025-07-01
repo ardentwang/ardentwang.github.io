@@ -11,14 +11,13 @@ const Home = () => {
             <div className="text-center">
               <h1 className="text-6xl md:text-8xl font-bold mb-6">
                 <span className="text-[#ff7979] dark:text-[#342e2e]">
-                  Creative
+                  This website is:
                 </span>
                 <br />
-                <span className="text-[#2d2d2d] dark:text-[#ca2a2a]">Developer</span>
+                <span className="text-[#2d2d2d] dark:text-[#ca2a2a]">Under Construction</span>
               </h1>
               <p className="text-xl md:text-2xl text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 mb-8 max-w-3xl mx-auto leading-relaxed">
-                I craft digital experiences that blend beautiful design with powerful functionality. 
-                Welcome to my corner of the internet.
+                If you have landed on this page, currently this page is under construction. Expect the completed result in about 3-4 business days. I appreciate your cooperation :3
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25">

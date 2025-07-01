@@ -8,7 +8,7 @@ const Navbar = () => {
   const router = useRouter();
   
   const navLinks = [
-    { href: '/about', text: 'About', variant: 'light' },
+    { href: '/', text: 'Home', variant: 'light' },
     { href: '/projects', text: 'Projects', variant: 'light' },
     { href: '/work', text: 'Work', variant: 'light' },
     { href: '/contact', text: 'Contact', variant: 'light' }
@@ -23,7 +23,7 @@ const Navbar = () => {
             Arden Wang
           </div>
           <div className="flex items-center gap-10">
-            <div className="hidden md:flex nav-buttons-container">
+            <div className="hidden md:flex nav-buttons-container gap-4">
               {navLinks.map((link, index) => (
                 <NavButton
                   key={index}
