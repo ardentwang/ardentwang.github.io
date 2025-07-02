@@ -51,7 +51,7 @@ const ContactPage: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const result = await emailjs.send(
+      await emailjs.send(
         'service_wppmtq7',
         'template_n1jemqw',
         { 
@@ -112,7 +112,7 @@ const ContactPage: React.FC = () => {
             <span className="text-[#2d2d2d] dark:text-white"> Touch</span>
           </h1>
           <p className="text-xl text-[#2d2d2d]/70 dark:text-white/70 max-w-2xl mx-auto">
-            Have a project in mind? Let's create something amazing together. I'm always open to discussing new opportunities.
+            Have a project in mind? Let&apos;s create something amazing together. I&apos;m always open to discussing new opportunities.
           </p>
         </div>
       </section>
