@@ -49,56 +49,28 @@ const ContactPage: React.FC = () => {
     }
 
     setIsLoading(true);
-
-    try {
-      await emailjs.send(
-        'service_wppmtq7',
-        'template_n1jemqw',
-        { 
-          name: name.trim(),
-          email: contact.trim(),
-          message: `Subject: ${subject.trim()}\n\n${message.trim()}`
-        }
-      );
-      
-      toast.success('Message sent successfully! I\'ll get back to you soon.');
-      
-      setFormData({
-        name: '',
-        contact: '',
-        subject: '',
-        message: '',
-      });
-      
-    } catch (error: any) {
-      console.error('EmailJS Error:', error);
-      console.error('Error type:', typeof error);
-      console.error('Error details:', {
-        message: error?.message,
-        text: error?.text,
-        status: error?.status,
-        name: error?.name
-      });
-      
-      let errorMessage = 'Failed to send message. Please try again later.';
-      
-      if (error?.text) {
-        console.error('EmailJS specific error text:', error.text);
-        errorMessage = `Error: ${error.text}`;
-      } else if (error?.message) {
-        errorMessage = `Error: ${error.message}`;
-      } else if (error?.status === 400) {
-        errorMessage = 'Invalid email configuration. Please check your setup.';
-      } else if (error?.status === 401) {
-        errorMessage = 'Authentication failed. Please check your EmailJS credentials.';
-      } else if (error?.status === 404) {
-        errorMessage = 'Email service not found. Please check your service ID.';
+    
+    await emailjs.send(
+      'service_wppmtq7',
+      'template_n1jemqw',
+      { 
+        name: name.trim(),
+        email: contact.trim(),
+        message: `Subject: ${subject.trim()}\n\n${message.trim()}`
       }
-      
-      toast.error(errorMessage);
-    } finally {
-      setIsLoading(false);
-    }
+    );
+    
+    toast.success('Message sent successfully! I\'ll get back to you soon.');
+    
+    setFormData({
+      name: '',
+      contact: '',
+      subject: '',
+      message: '',
+    });
+    
+  
+    setIsLoading(false);
   };
 
   return (
