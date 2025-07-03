@@ -145,7 +145,7 @@ export default function ProjectsPage() {
             <span className="text-[#2d2d2d] dark:text-white"> Projects</span>
           </h1>
           <p className="text-xl text-[#2d2d2d]/70 dark:text-white/70 max-w-3xl mx-auto">
-            A collection of businesses and products I've built from the ground up. 
+            A collection of businesses and products I&#39;ve built from the ground up. 
             Each project represents months of problem-solving, technical challenges, and real impact.
           </p>
           
@@ -182,7 +182,7 @@ export default function ProjectsPage() {
             Interested in Working Together?
           </h2>
           <p className="text-[#2d2d2d]/70 dark:text-white/70 mb-8">
-            I'm always open to discussing new projects and opportunities.
+            I&#39;m always open to discussing new projects and opportunities.
           </p>
           <a 
             href="/contact"

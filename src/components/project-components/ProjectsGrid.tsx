@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
 import { ProjectFilters } from './ProjectFilters';
@@ -15,7 +14,6 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({
   projects, 
   showFilters = true 
 }) => {
-  const router = useRouter();
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
   const [activeFilter, setActiveFilter] = useState<string>('All');
