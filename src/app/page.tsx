@@ -21,7 +21,7 @@ const Home = () => {
               </h1>
               <p className="text-xl md:text-2xl text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Building innovative web applications and AI-powered solutions that solve real problems. 
-                Currently generating $1.1K+ MRR across multiple projects.
+                Currently generating $5.1K+ MRR across multiple projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link href="/projects" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25">
