@@ -1,6 +1,7 @@
 export interface Project {
   id: string;
   slug: string;
+  
   name: string;
   logo?: string;
   tagline: string;
@@ -28,4 +29,5 @@ export interface Project {
   featured?: boolean;
   startDate?: string;
   endDate?: string;
+  heroImage?: string;
 }

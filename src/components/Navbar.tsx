@@ -12,7 +12,6 @@ const Navbar = () => {
     { href: '/projects', text: 'Projects', variant: 'light' },
     { href: '/work', text: 'Work', variant: 'light' },
     { href: '/contact', text: 'Contact', variant: 'light' }
-
   ];
 
   return (

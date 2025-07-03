@@ -23,7 +23,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-[90vw] w-full max-h-[90vh] overflow-y-auto sm:max-w-[85vw] md:max-w-[80vw]">
         <DialogHeader className="pb-4 border-b border-gray-200 dark:border-[#342e2e]">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-4">
@@ -78,14 +78,16 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           </div>
         </DialogHeader>
 
-        <div className="my-6 bg-gradient-to-r from-[#ff7979]/10 to-[#ff5757]/10 dark:from-[#342e2e]/20 dark:to-[#342e2e]/10 rounded-lg p-6 border border-[#ff7979]/20 dark:border-[#342e2e]/30">
-          <p className="text-3xl font-bold text-[#ff7979] dark:text-[#ff7979]">
-            {project.keyMetric.value}
-          </p>
-          <p className="text-sm text-[#2d2d2d]/70 dark:text-white/70 mt-1">
-            {project.keyMetric.label}
-          </p>
-        </div>
+        {/* Hero Image */}
+        {project.heroImage && (
+          <div className="relative w-full h-64 md:h-96 my-6 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+            <img 
+              src={project.heroImage} 
+              alt={`${project.name} preview`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
 
         <Tabs defaultValue="overview" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-6">
