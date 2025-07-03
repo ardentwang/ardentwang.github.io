@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight, TrendingUp } from 'lucide-react';
@@ -38,11 +39,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-3">
               {project.logo ? (
-                <img 
-                  src={project.logo} 
-                  alt={`${project.name} logo`}
-                  className="w-12 h-12 rounded-lg object-cover"
-                />
+                <div className="relative w-12 h-12 rounded-lg overflow-hidden">
+                  <Image 
+                    src={project.logo} 
+                    alt={`${project.name} logo`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               ) : (
                 <div 
                   className="w-12 h-12 rounded-lg flex items-center justify-center text-white font-bold text-lg"

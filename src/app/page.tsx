@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Link from "next/link"
+import Image from "next/image"
 import SocialButtons from "@/components/contact-components/SocialButtons"
 
 const Home = () => {
@@ -11,14 +12,14 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="opacity-100 translate-y-0">
             <div className="text-center">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              <h1 className="text-6xl md:text-8xl font-bold mb-6">
                 <span className="text-[#ff7979] dark:text-[#342e2e]">
                   Arden Wang
                 </span>
                 <br />
                 <span className="text-[#2d2d2d] dark:text-[#ca2a2a]">Full-Stack Engineer</span>
               </h1>
-              <p className="text-l md:text-2xl text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Building innovative web applications and AI-powered solutions that solve real problems. 
                 Currently generating $1.1K+ MRR across multiple projects.
               </p>
@@ -63,11 +64,13 @@ const Home = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto bg-gradient-to-br from-[#ff7979]/20 dark:from-[#342e2e]/20 to-[#ff7979]/5 dark:to-[#342e2e]/5 rounded-3xl"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 rounded-2xl shadow-xl overflow-hidden">
-                  <img 
+                <div className="w-64 h-64 rounded-2xl shadow-xl overflow-hidden relative">
+                  <Image 
                     src="/home/profile.png" 
                     alt="Arden Wang"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                   />
                 </div>
               </div>

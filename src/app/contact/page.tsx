@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Navbar from "@/components/Navbar";
 import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 import SocialButtons from "@/components/contact-components/SocialButtons";
 
 emailjs.init('Xb5vxAulzJk_hP84B');

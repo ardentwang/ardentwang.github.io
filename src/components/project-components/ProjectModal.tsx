@@ -1,10 +1,11 @@
 "use client"
 import React from 'react';
+import Image from 'next/image';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ExternalLink, Calendar, User, Lightbulb, Code, Trophy} from 'lucide-react';
+import { ExternalLink, Calendar, User, Lightbulb, Code, Trophy, X } from 'lucide-react';
 import { TechStackBadge } from './TechStackBadge';
 import type { Project } from './types';
 
@@ -28,11 +29,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-4">
               {project.logo ? (
-                <img 
-                  src={project.logo} 
-                  alt={`${project.name} logo`}
-                  className="w-16 h-16 rounded-lg object-cover"
-                />
+                <div className="relative w-16 h-16 rounded-lg overflow-hidden">
+                  <Image 
+                    src={project.logo} 
+                    alt={`${project.name} logo`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               ) : (
                 <div 
                   className="w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold text-xl"
@@ -78,13 +82,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           </div>
         </DialogHeader>
 
-        {/* Hero Image */}
         {project.heroImage && (
           <div className="relative w-full h-64 md:h-96 my-6 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
-            <img 
+            <Image 
               src={project.heroImage} 
               alt={`${project.name} preview`}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              priority
             />
           </div>
         )}
@@ -157,11 +162,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                   {project.architecture.description}
                 </p>
                 {project.architecture.imageUrl && (
-                  <img 
-                    src={project.architecture.imageUrl} 
-                    alt="Architecture diagram"
-                    className="w-full rounded-lg border border-gray-200 dark:border-[#342e2e]"
-                  />
+                  <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden border border-gray-200 dark:border-[#342e2e]">
+                    <Image 
+                      src={project.architecture.imageUrl} 
+                      alt="Architecture diagram"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 )}
               </div>
             )}
