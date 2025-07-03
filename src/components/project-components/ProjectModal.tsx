@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ExternalLink, Calendar, User, Lightbulb, Code, Trophy, X } from 'lucide-react';
+import { ExternalLink, Calendar, User, Lightbulb, Code, Trophy} from 'lucide-react';
 import { TechStackBadge } from './TechStackBadge';
 import type { Project } from './types';
 
