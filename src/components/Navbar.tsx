@@ -2,7 +2,6 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import NavButton from './nav-button';
-import ThemeToggle from './theme-toggle';
 
 const Navbar = () => {
   const router = useRouter();
@@ -33,7 +32,6 @@ const Navbar = () => {
                 </NavButton>
               ))}
             </div>
-            <ThemeToggle />
           </div>
         </div>
       </div>
