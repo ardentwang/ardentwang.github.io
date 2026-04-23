@@ -83,7 +83,7 @@ const ContactPage: React.FC = () => {
       <section className="pt-32 pb-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-[#ff7979] dark:text-[#342e2e]">Get In</span>
+            <span className="text-[#ff7979] dark:text-[#ff7979]">Get In</span>
             <span className="text-[#2d2d2d] dark:text-white"> Touch</span>
           </h1>
           <p className="text-xl text-[#2d2d2d]/70 dark:text-white/70 max-w-2xl mx-auto">
@@ -177,7 +177,7 @@ const ContactPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-[#ff7979] dark:bg-[#342e2e] text-white dark:text-[#ca2a2a] py-4 px-6 rounded-full font-semibold hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#ff7979] dark:focus:ring-[#342e2e] focus:ring-offset-2 dark:focus:ring-offset-[#2d2d2d] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-200 shadow-lg shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25 flex items-center justify-center"
+                className="w-full bg-[#ff7979] dark:bg-[#342e2e] text-white py-4 px-6 rounded-full font-semibold hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#ff7979] dark:focus:ring-[#342e2e] focus:ring-offset-2 dark:focus:ring-offset-[#2d2d2d] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-200 shadow-lg shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25 flex items-center justify-center"
               >
                 {isLoading ? (
                   <>
@@ -200,17 +200,17 @@ const ContactPage: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button 
                   onClick={() => window.location.href = 'mailto:ardentwang@gmail.com'}
-                  className="flex items-center gap-2 text-[#ff7979] dark:text-[#342e2e] hover:text-[#ff5757] dark:hover:text-[#231d1d] transition-colors"
+                  className="flex items-center gap-2 text-[#ff7979] dark:text-[#ff7979] hover:text-[#ff5757] dark:hover:text-[#ff5757] transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   ardentwang@gmail.com
                 </button>
-                <span className="hidden sm:inline text-gray-300 dark:text-[#342e2e]/30">•</span>
-                <button 
+                <span className="hidden sm:inline text-gray-300 dark:text-white/30">•</span>
+                <button
                   onClick={() => window.location.href = 'tel:+19096308025'}
-                  className="flex items-center gap-2 text-[#ff7979] dark:text-[#342e2e] hover:text-[#ff5757] dark:hover:text-[#231d1d] transition-colors"
+                  className="flex items-center gap-2 text-[#ff7979] dark:text-[#ff7979] hover:text-[#ff5757] dark:hover:text-[#ff5757] transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

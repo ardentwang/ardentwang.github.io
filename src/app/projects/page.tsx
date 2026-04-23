@@ -141,7 +141,7 @@ export default function ProjectsPage() {
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-[#ff7979] dark:text-[#342e2e]">My</span>
+            <span className="text-[#ff7979] dark:text-[#ff7979]">My</span>
             <span className="text-[#2d2d2d] dark:text-white"> Projects</span>
           </h1>
           <p className="text-xl text-[#2d2d2d]/70 dark:text-white/70 max-w-3xl mx-auto">
@@ -186,7 +186,7 @@ export default function ProjectsPage() {
           </p>
           <a 
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25"
+            className="inline-flex items-center px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25"
           >
             Get In Touch
           </a>

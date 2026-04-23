@@ -6,27 +6,27 @@ const WorkHistory = () => {
   const workExperience = [
     {
       "id": 1,
-      "title": "Quality Engineer",
-      "company": "Moog Aircraft",
-      "period": "May 2025 - Present",
-      "description": "Currently working as a Quality Engineer intern at Moog Aircraft in Torrance, California.",
-      "skills": [],
-      "dotColor": "bg-red-800",
-      "companyColor": "text-red-800",
-      "logo": "/logos/moog.png",
-      "logoFallback": "MA"
+      "title": "Software Engineer",
+      "company": "BNY",
+      "period": "Sep 2025 - Present",
+      "description": "Achieved 81% code coverage across 108 NUnit tests on C#/.NET Razor Pages, leveraging Moq for dependency isolation. Designed and executed a disaster recovery workflow via OneDesk to validate application failover and recovery procedures. Developing an API wrapper to standardize Splunk log ingestion across teams, reducing query inefficiency and lowering observability costs.",
+      "skills": ["C#", ".NET", "NUnit", "Moq", "Splunk"],
+      "dotColor": "bg-blue-700",
+      "companyColor": "text-blue-700",
+      "logo": "/logos/bny.png",
+      "logoFallback": "BNY"
     },
     {
       "id": 2,
-      "title": "Software Engineer",
-      "company": "Moog Aircraft",
-      "period": "Jun 2024 - Aug 2024",
-      "description": "Engineered and deployed Python-based automation solutions for weekly data report generation and modification, reducing processing time from 102 minutes to 3 minutes—a 97% efficiency increase. Independently developed a prototype of a comprehensive full-stack solution using Next.js and Flask, with the intent of quick access to report automation capabilities.",
-      "skills": ["Python", "Next.js", "Flask", "JavaScript", "Microsoft Excel"],
+      "title": "Full-Stack Software Engineer Intern",
+      "company": "Moog Inc.",
+      "period": "Jun 2024 - Aug 2025",
+      "description": "Personally initiated meetings with functionality managers to understand existing issues and executed effective solutions through an Agile project management methodology, eliminating up to 8 hours of daily data silos. Built a PDF-to-QR-code generator in React for digital storage of calibration certifications. Created semi-automated reporting software with Python tkinter GUIs, making data entry 5.3x faster. Engineered local automation cell data transfer from SQL databases to enterprise via Ignition. Developed a centralized Report Automation intranet site using React and Flask.",
+      "skills": ["Python", "React", "Flask", "Next.js", "JavaScript", "SQL"],
       "dotColor": "bg-red-800",
       "companyColor": "text-red-800",
       "logo": "/logos/moog.png",
-      "logoFallback": "MA"
+      "logoFallback": "MI"
     },
     {
       "id": 3,
@@ -42,11 +42,11 @@ const WorkHistory = () => {
     },
     {
       "id": 4,
-      "title": "Software Engineer",
+      "title": "Full-Stack Software Engineering Intern",
       "company": "California ISO",
       "period": "May 2023 - Sep 2023",
-      "description": "Conceptualized and developed a streamlined OASIS website using React for optimal user experience using dynamic rendering through a provided JSON data file, prioritizing rapid access to latest electric pricing data. Conducted solo technical demos for the software team, detailing code functionality and the website's rendering processes.",
-      "skills": ["React.js", "CSS", "Express.js", "JavaScript"],
+      "description": "Designed and developed an intranet React + Express.js site focused on real-time data retrieval with modern UI design, improving electric price grid fetch time for stakeholders by 480%.",
+      "skills": ["React.js", "Express.js", "JavaScript", "CSS"],
       "dotColor": "bg-green-600",
       "companyColor": "text-green-600",
       "logo": "/logos/caiso.png",
@@ -69,8 +69,8 @@ const WorkHistory = () => {
       "title": "Software Engineer",
       "company": "KeyMath",
       "period": "Jun 2022 - Nov 2022",
-      "description": "Generated over 100,000 math questions in the K-12 range using Python3 in latex code formatting. Personally led an intern team that focused on ensuring math questions generated were relevant to each grade category, program correctness, and coding convention adherence.",
-      "skills": ["Gitlab", "Software Development", "Project Planning", "Marketing Strategy", "Python"],
+      "description": "Generated over 100,000 math questions in the K-12 range using Python3 in LaTeX code formatting. Personally led an intern team focused on ensuring math questions were relevant to each grade category, program correctness, and coding convention adherence.",
+      "skills": ["Python", "Software Development", "Project Planning"],
       "dotColor": "bg-orange-600",
       "companyColor": "text-orange-600",
       "logo": "/logos/keymath.png",
@@ -81,8 +81,8 @@ const WorkHistory = () => {
       "title": "Data Engineer",
       "company": "University of California, Los Angeles",
       "period": "May 2019 - Aug 2019",
-      "description": "Worked under Professor Pellegrini at the UCLA Department of Molecular, Cell and Developmental Biology. Created a PLS Regression algorithm using Python 3, using machine learning to identify biomarkers related to lifestyle risk factors. Transformed PLS algorithm results into accurate and precise graphs using matplotlib.",
-      "skills": ["MATLAB", "Data Analysis", "Data Modeling", "Python"],
+      "description": "Worked under Professor Pellegrini at the UCLA Department of Molecular, Cell and Developmental Biology. Created a PLS Regression algorithm using Python 3 to identify biomarkers related to lifestyle risk factors using machine learning. Visualized results with matplotlib.",
+      "skills": ["Python", "MATLAB", "Data Analysis", "Data Modeling"],
       "dotColor": "bg-yellow-600",
       "companyColor": "text-yellow-600",
       "logo": "/logos/ucla.png",
@@ -91,27 +91,27 @@ const WorkHistory = () => {
   ];
 
   return (
-    <div>
+    <div className="min-h-screen bg-white dark:bg-[#ca2a2a] transition-colors">
       <Navbar/>
       <div className="max-w-4xl mx-auto p-6 mt-25">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Work Experience</h2>
-        
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Work Experience</h2>
+
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
-          
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-[#342e2e]"></div>
+
           {workExperience.map((job) => (
             <div key={job.id} className="relative flex items-start mb-8 last:mb-0">
               {/* Timeline dot */}
-              <div className={`absolute left-8 w-4 h-4 ${job.dotColor} rounded-full -translate-x-1/2 ring-4 ring-white`}></div>
-              
+              <div className={`absolute left-8 w-4 h-4 ${job.dotColor} rounded-full -translate-x-1/2 ring-4 ring-white dark:ring-[#ca2a2a]`}></div>
+
               {/* Content */}
-              <div className="ml-16 bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+              <div className="ml-16 bg-white dark:bg-[#342e2e] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900">{job.title}</h3>
-                  <span className="text-sm text-gray-500 mt-1 sm:mt-0">{job.period}</span>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{job.title}</h3>
+                  <span className="text-sm text-gray-500 dark:text-white/60 mt-1 sm:mt-0">{job.period}</span>
                 </div>
-                
+
                 <div className="flex items-center gap-3 mb-3">
                   <Avatar className="h-10 w-10">
                     <AvatarImage src={job.logo} alt={job.company} />
@@ -121,15 +121,15 @@ const WorkHistory = () => {
                   </Avatar>
                   <p className={`text-lg ${job.companyColor} font-medium`}>{job.company}</p>
                 </div>
-                
-                <p className="text-gray-700 mb-4">{job.description}</p>
-                
+
+                <p className="text-gray-700 dark:text-white/70 mb-4">{job.description}</p>
+
                 {job.skills.length > 0 && (
                   <div className="flex flex-wrap gap-2">
                     {job.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className="px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 rounded-full"
+                        className="px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:bg-[#ca2a2a]/30 dark:text-[#ff7979] rounded-full"
                       >
                         {skill}
                       </span>

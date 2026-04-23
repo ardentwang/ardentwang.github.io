@@ -46,18 +46,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 18%;
-  }
-
-  .dark {
-    --background: 0 0% 18%;
-    --foreground: 0 0% 98%;
-  }
-}
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

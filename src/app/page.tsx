@@ -13,21 +13,21 @@ const Home = () => {
           <div className="opacity-100 translate-y-0">
             <div className="text-center">
               <h1 className="text-6xl md:text-8xl font-bold mb-6">
-                <span className="text-[#ff7979] dark:text-[#342e2e]">
+                <span className="text-[#ff7979] dark:text-[#ff7979]">
                   Arden Wang
                 </span>
                 <br />
-                <span className="text-[#2d2d2d] dark:text-[#ca2a2a]">Full-Stack Engineer</span>
+                <span className="text-[#2d2d2d] dark:text-white">Full-Stack Engineer</span>
               </h1>
-              <p className="text-xl md:text-2xl text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-[#2d2d2d]/70 dark:text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Building innovative web applications and AI-powered solutions that solve real problems. 
                 Currently generating $5.1K+ MRR across multiple projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link href="/projects" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25">
+                <Link href="/projects" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-white font-semibold hover:scale-105 transition-transform shadow-xl shadow-[#ff7979]/25 dark:shadow-[#342e2e]/25">
                   View My Work
                 </Link>
-                <Link href="/contact" className="px-8 py-4 border-2 border-[#ff7979] dark:border-[#342e2e] rounded-full text-[#ff7979] dark:text-[#342e2e] font-semibold hover:bg-[#ff7979] dark:hover:bg-[#342e2e] hover:text-white dark:hover:text-[#ca2a2a] transition-colors">
+                <Link href="/contact" className="px-8 py-4 border-2 border-[#ff7979] dark:border-white/30 rounded-full text-[#ff7979] dark:text-white font-semibold hover:bg-[#ff7979] dark:hover:bg-white/10 hover:text-white dark:hover:text-white transition-colors">
                   Get In Touch
                 </Link>
               </div>
@@ -40,22 +40,22 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-[#ca2a2a] mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-white mb-6">
                 About Me
               </h2>
-              <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg leading-relaxed mb-6">
+              <p className="text-[#2d2d2d]/70 dark:text-white/70 text-lg leading-relaxed mb-6">
                 I&#39;m a passionate full-stack engineer specializing in building scalable web applications 
                 and AI-powered platforms. With expertise in modern technologies like Next.js, TypeScript, 
                 and OpenAI, I transform complex problems into elegant solutions.
               </p>
-              <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg leading-relaxed mb-8">
+              <p className="text-[#2d2d2d]/70 dark:text-white/70 text-lg leading-relaxed mb-8">
                 Currently working on multiple successful projects including AI Admits (EdTech), 
                 BuyHomePro (Real Estate), and BadgerBash (Gaming). I believe in building products 
                 that make a real impact on users&#39; lives.
               </p>
               <div className="flex flex-wrap gap-3">
                 {['React', 'Next.js', 'TypeScript', 'Supabase', 'OpenAI API', 'Prisma', 'Tailwind CSS'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 border border-[#ff7979]/30 dark:border-[#342e2e]/30 rounded-full text-[#ff7979] dark:text-[#342e2e] text-sm font-medium">
+                  <span key={skill} className="px-4 py-2 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 border border-[#ff7979]/30 dark:border-[#342e2e]/30 rounded-full text-[#ff7979] dark:text-[#ff7979] text-sm font-medium">
                     {skill}
                   </span>
                 ))}
@@ -81,7 +81,7 @@ const Home = () => {
 
       <section id="projects" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-[#ca2a2a] text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-white text-center mb-16">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -91,13 +91,13 @@ const Home = () => {
                 <div className="h-48 bg-gradient-to-br from-[#F59E0B]/20 to-[#F59E0B]/5 rounded-xl mb-6 flex items-center justify-center">
                   <span className="text-4xl font-bold text-[#F59E0B]">AI</span>
                 </div>
-                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-[#ca2a2a] mb-3">AI Admits</h3>
-                <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-sm mb-4">
+                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-white mb-3">AI Admits</h3>
+                <p className="text-[#2d2d2d]/70 dark:text-white/70 text-sm mb-4">
                   AI-powered college admissions platform with $1.1K+ MRR, helping 400+ students with essays and applications.
                 </p>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">EdTech</span>
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">OpenAI</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">EdTech</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">OpenAI</span>
                 </div>
               </div>
             </Link>
@@ -108,13 +108,13 @@ const Home = () => {
                 <div className="h-48 bg-gradient-to-br from-[#10B981]/20 to-[#10B981]/5 rounded-xl mb-6 flex items-center justify-center">
                   <span className="text-4xl font-bold text-[#10B981]">🏠</span>
                 </div>
-                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-[#ca2a2a] mb-3">BuyHomePro</h3>
-                <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-sm mb-4">
+                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-white mb-3">BuyHomePro</h3>
+                <p className="text-[#2d2d2d]/70 dark:text-white/70 text-sm mb-4">
                   AI real estate platform saving buyers $1M+ through intelligent property insights and agent connections.
                 </p>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">SaaS</span>
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">Real Estate</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">SaaS</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">Real Estate</span>
                 </div>
               </div>
             </Link>
@@ -125,19 +125,19 @@ const Home = () => {
                 <div className="h-48 bg-gradient-to-br from-[#8B5CF6]/20 to-[#8B5CF6]/5 rounded-xl mb-6 flex items-center justify-center">
                   <span className="text-4xl font-bold text-[#8B5CF6]">🎮</span>
                 </div>
-                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-[#ca2a2a] mb-3">BadgerBash</h3>
-                <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-sm mb-4">
+                <h3 className="text-xl font-semibold text-[#2d2d2d] dark:text-white mb-3">BadgerBash</h3>
+                <p className="text-[#2d2d2d]/70 dark:text-white/70 text-sm mb-4">
                   Lightweight multiplayer gaming platform with 300+ games played, built without heavy game engines.
                 </p>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">Gaming</span>
-                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#342e2e] text-xs rounded-full font-medium">Real-time</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">Gaming</span>
+                  <span className="px-3 py-1 bg-[#ff7979]/10 dark:bg-[#342e2e]/20 text-[#ff7979] dark:text-[#ff7979] text-xs rounded-full font-medium">Real-time</span>
                 </div>
               </div>
             </Link>
           </div>
           <div className="text-center mt-12">
-            <Link href="/projects" className="inline-flex items-center text-[#ff7979] dark:text-[#342e2e] hover:text-[#ff5757] dark:hover:text-[#231d1d] transition-colors font-medium">
+            <Link href="/projects" className="inline-flex items-center text-[#ff7979] dark:text-[#ff7979] hover:text-[#ff5757] dark:hover:text-[#ff5757] transition-colors font-medium">
               View All Projects
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -149,14 +149,14 @@ const Home = () => {
 
       <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-[#ca2a2a]/10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-[#ca2a2a] mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2d2d2d] dark:text-white mb-6">
             Let&#39;s Work Together
           </h2>
-          <p className="text-[#2d2d2d]/70 dark:text-[#ca2a2a]/70 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-[#2d2d2d]/70 dark:text-white/70 text-lg mb-8 max-w-2xl mx-auto">
             Have a project in mind? I&#39;d love to hear about it. Let&#39;s create something amazing together.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="/contact" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-[#ca2a2a] font-semibold hover:scale-105 transition-transform shadow-lg">
+            <Link href="/contact" className="px-8 py-4 bg-[#ff7979] dark:bg-[#342e2e] rounded-full text-white dark:text-white font-semibold hover:scale-105 transition-transform shadow-lg">
               Contact Me
             </Link>
             <SocialButtons />
@@ -165,7 +165,7 @@ const Home = () => {
       </section>
 
       <footer className="py-8 px-6 border-t border-gray-200 dark:border-[#342e2e]/30">
-        <div className="max-w-6xl mx-auto text-center text-[#2d2d2d]/60 dark:text-[#ca2a2a]/60">
+        <div className="max-w-6xl mx-auto text-center text-[#2d2d2d]/60 dark:text-white/60">
           <p>&copy; 2025 Arden Wang. Built with Next.js and Tailwind CSS.</p>
         </div>
       </footer>
